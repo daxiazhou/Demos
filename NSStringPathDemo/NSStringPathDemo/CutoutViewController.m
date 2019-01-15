@@ -13,6 +13,8 @@
 @interface CutoutViewController ()
 
 @property (nonatomic, strong) UIImageView *backView;
+@property (nonatomic, strong) UIView *grayView;
+
 @property (nonatomic, strong) ZDXCutoutLabel *label;
 
 @end
@@ -37,6 +39,10 @@
     self.backView.animationImages = frames;
     self.backView.animationDuration = 0.1;
     [self.backView startAnimating];
+    
+    self.grayView = [[UIView alloc] initWithFrame:self.backView.bounds];
+    self.grayView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.2];
+    [self.backView addSubview:self.grayView];
     
     self.label = [[ZDXCutoutLabel alloc] initWithFrame:CGRectMake(0, 300, self.view.frame.size.width, 300)];
     [self.view addSubview:self.label];
