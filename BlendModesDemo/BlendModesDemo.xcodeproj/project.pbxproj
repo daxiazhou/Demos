@@ -15,6 +15,8 @@
 		773BAF62221564A200A295FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 773BAF61221564A200A295FD /* main.m */; };
 		773BAF6A2215650800A295FD /* destination.png in Resources */ = {isa = PBXBuildFile; fileRef = 773BAF682215650700A295FD /* destination.png */; };
 		773BAF6B2215650800A295FD /* source.png in Resources */ = {isa = PBXBuildFile; fileRef = 773BAF692215650800A295FD /* source.png */; };
+		773BAF7122168DFA00A295FD /* ZDXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 773BAF7022168DFA00A295FD /* ZDXLabel.m */; };
+		773BAF732216918B00A295FD /* backImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 773BAF722216918B00A295FD /* backImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,9 @@
 		773BAF61221564A200A295FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		773BAF682215650700A295FD /* destination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = destination.png; sourceTree = "<group>"; };
 		773BAF692215650800A295FD /* source.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = source.png; sourceTree = "<group>"; };
+		773BAF6F22168DFA00A295FD /* ZDXLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDXLabel.h; sourceTree = "<group>"; };
+		773BAF7022168DFA00A295FD /* ZDXLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDXLabel.m; sourceTree = "<group>"; };
+		773BAF722216918B00A295FD /* backImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 		773BAF51221564A000A295FD /* BlendModesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				773BAF722216918B00A295FD /* backImage.png */,
 				773BAF682215650700A295FD /* destination.png */,
 				773BAF692215650800A295FD /* source.png */,
 				773BAF52221564A000A295FD /* AppDelegate.h */,
@@ -73,6 +79,8 @@
 				773BAF5D221564A200A295FD /* LaunchScreen.storyboard */,
 				773BAF60221564A200A295FD /* Info.plist */,
 				773BAF61221564A200A295FD /* main.m */,
+				773BAF6F22168DFA00A295FD /* ZDXLabel.h */,
+				773BAF7022168DFA00A295FD /* ZDXLabel.m */,
 			);
 			path = BlendModesDemo;
 			sourceTree = "<group>";
@@ -134,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773BAF732216918B00A295FD /* backImage.png in Resources */,
 				773BAF6B2215650800A295FD /* source.png in Resources */,
 				773BAF6A2215650800A295FD /* destination.png in Resources */,
 				773BAF5F221564A200A295FD /* LaunchScreen.storyboard in Resources */,
@@ -152,6 +161,7 @@
 				773BAF57221564A000A295FD /* ViewController.m in Sources */,
 				773BAF62221564A200A295FD /* main.m in Sources */,
 				773BAF54221564A000A295FD /* AppDelegate.m in Sources */,
+				773BAF7122168DFA00A295FD /* ZDXLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

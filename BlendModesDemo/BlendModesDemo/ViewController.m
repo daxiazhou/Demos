@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZDXLabel.h"
 
 CGContextRef MyCreateBitmapContext (int pixelsWide,
                                     int pixelsHigh)
@@ -48,6 +49,7 @@ CGContextRef MyCreateBitmapContext (int pixelsWide,
 @interface ViewController ()
 
 @property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) ZDXLabel *label;
 
 @end
 
@@ -55,6 +57,15 @@ CGContextRef MyCreateBitmapContext (int pixelsWide,
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.label = [[ZDXLabel alloc] initWithFrame:CGRectMake(10, 90, self.view.frame.size.width - 20, 30)];
+    self.label.textAlignment = NSTextAlignmentCenter;
+    self.label.text = @"你的关注";
+    self.label.fillColor = [UIColor whiteColor];
+    self.label.font = [UIFont systemFontOfSize:18 weight:UIFontWeightBold];
+    self.label.cornerRadius = 4.0;
+//    [self.view addSubview:self.label];
+    
     
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 128, 128)];
     self.imageView.center = self.view.center;
