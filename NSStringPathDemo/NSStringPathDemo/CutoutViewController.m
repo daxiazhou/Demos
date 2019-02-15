@@ -9,6 +9,7 @@
 #import "CutoutViewController.h"
 #import "ZDXCutoutLabel.h"
 #import <ImageIO/ImageIO.h>
+#import "ZDXHollowLabel.h"
 
 @interface CutoutViewController ()
 
@@ -45,10 +46,20 @@
     [self.backView addSubview:self.grayView];
     
     self.label = [[ZDXCutoutLabel alloc] initWithFrame:CGRectMake(0, 300, self.view.frame.size.width, 300)];
-    [self.view addSubview:self.label];
+//    [self.view addSubview:self.label];
     self.label.backgroundColor = [UIColor whiteColor];
     [self.label updateWithText:@"这是镂空文字"
                           font:[UIFont boldSystemFontOfSize:60]];
+    
+    
+    ZDXHollowLabel *label = [[ZDXHollowLabel alloc] init];
+    label.text = @"镂空字体";
+    label.textAlignment = NSTextAlignmentCenter;
+    label.font = [UIFont boldSystemFontOfSize:50];
+    label.frame = CGRectMake(0, 100, self.view.bounds.size.width, 100);
+    label.fillColor = [UIColor whiteColor];
+    
+    [self.view addSubview:label];
 }
 
 

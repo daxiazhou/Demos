@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  Tutorial_01
+//  BlendModesDemo
 //
-//  Created by 周舟 on 2019/1/13.
+//  Created by ZDX on 2019/2/14.
 //  Copyright © 2019 none. All rights reserved.
 //
 
